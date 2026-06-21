@@ -8,15 +8,15 @@ class Estudiante {
     std::string nombre;
     std::string materia;
     std::string matricula;
-    std::string seccion;
+    float seccion;
 
     public: // constructores y metodos publicos de la clase Estudiante
-    Estudiante(std::string _nombre, std::string _matricula, std::string _seccion);
+    Estudiante(std::string _nombre, std::string _matricula, float  _seccion);
     // metodo para mostrar la informacion del estudiante
     void mostrar(); 
     std::string get_Nombre() { return nombre; } 
     std::string get_nombre() { return materia;}
     std::string get_Matricula() { return matricula; } 
-    std::string get_Seccion() { return seccion; } 
+    float get_Seccion() { return seccion; } 
     void serializar(std::ofstream & archivo); 
 };
