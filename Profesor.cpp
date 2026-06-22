@@ -1,5 +1,6 @@
 #include "Profesor.h"
 #include <iostream>
+#include <sftream> 
 
 Profesor::Profesor(std::string _nombre, std::string _codigo) {
     this->nombre = _nombre;

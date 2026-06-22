@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include "Calificacion.h"
+#include <sftream> 
 
 class Persistencia {
 private:
