@@ -1,10 +1,8 @@
 #pragma once
 #include <iostream>
-#include <sftream> 
-#include <fstream>
 #include "Estudiante.h"
-#include "Materia.h"
 #include "Profesor.h"
+#include "Materia.h"
 
 class Calificacion {
 private:
