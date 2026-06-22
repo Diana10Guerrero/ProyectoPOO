@@ -13,16 +13,10 @@ private:
 public:
     // Constructor
     Materia(std::string _nombre, float _codigo, float _creditos);
-
-    // Mostrar información
     void mostrar_info();
-
-    // Getters
     std::string get_nombre() { return nombre; }
     float get_codigo() { return codigo; }
     float get_creditos() { return creditos; }
-
-    // Serializar como string
     std::string serializar() {
         return "Nombre: " + nombre +
                "\nCodigo: " + std::to_string(codigo) +
