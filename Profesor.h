@@ -1,31 +1,16 @@
 #pragma once
-#include <iostream>
-#include <fstream>
 #include <string>
 
-// Clase Profesor
 class Profesor {
-private: // Atributos de la clase
+private:
     std::string nombre;
-    std::string materia;
-    float codigo;
+    std::string codigo;
 
 public:
-    // Constructor de la clase
-    Profesor(std::string _nombre, std::string _materia, float _codigo);
+    Profesor() {}
+    Profesor(std::string n, std::string c) : nombre(n), codigo(c) {}
 
-    // Métodos de la clase
-    void mostrar();
-
-    std::string get_nombre() { return nombre; }
-    std::string get_materia() { return materia; }
-    float get_codigo() { return codigo; }
-
-    // Serializar en archivo
-    void serializar(std::ofstream & archivo);
-
-    // Serializar como string
-    std::string serializar() {
-        return nombre + "\n" + materia + "\n" + std::to_string(codigo) + "\n";
-    }
+    std::string get_nombre() const { return nombre; }
+    std::string get_codigo() const { return codigo; }
 };
+
