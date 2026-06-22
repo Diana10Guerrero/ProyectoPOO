@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
-#include "Estudiant.h"
+#include "Estudiante.h"
 #include "Materia.h"
-#include "Profesor1.h"
+#include "Profesor.h"
 
 class Calificacion {
     private:
@@ -12,4 +12,6 @@ class Calificacion {
         float nota;
    
     public:
-    s
+    Estudiante estudiante;
+    Materia materia;
+    Profesor profesor;
