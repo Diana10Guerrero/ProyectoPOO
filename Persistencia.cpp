@@ -15,11 +15,12 @@ void Persistencia::guardar_calificaciones(const std::vector<Calificacion>& lista
     }
 
     for (const Calificacion& c : lista) {
-        archivo << c.get_nombre() << ","
-                << c.get_profesor() << ","
-                << c.get_materia() << ","
-                << c.get_nota()
-                << "\n";
+        archivo << c.getEstudiante().get_Nombre() << ","
+        << c.getProfesor().get_nombre() << ","
+        << c.getMateria().get_nombre() << ","
+        << c.getNota()
+        << "\n";
+
     }
 
     archivo.close();
