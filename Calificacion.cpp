@@ -2,12 +2,12 @@
 #include <iostream>
 #include <fstream>
 
-Calificacion::Calificacion(Estudiante _estudiante, Profesor _profesor, Materia _materia, float _nota) {
-    this->estudiante = _estudiante;
-    this->profesor = _profesor;
-    this->materia = _materia;
-    this->nota = _nota;
-}
+Calificacion::Calificacion(Estudiante _estudiante, Profesor _profesor, Materia _materia, float _nota)
+    : estudiante(_estudiante),
+      profesor(_profesor),
+      materia(_materia),
+      nota(_nota)
+{}
 
 void Calificacion::mostrar() {
     std::cout << "----- CALIFICACIÓN -----\n";
@@ -22,4 +22,4 @@ void Calificacion::serializar(std::ofstream &archivo) {
             << profesor.get_nombre() << "|"
             << materia.get_nombre() << "|"
             << nota << "\n";
-}
+};
