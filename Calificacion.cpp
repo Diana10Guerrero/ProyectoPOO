@@ -1,6 +1,7 @@
 #include "Calificacion.h"
 #include <iostream>
 #include <fstream>
+#include <sftream>
 
 Calificacion::Calificacion(Estudiante _estudiante, Profesor _profesor, Materia _materia, float _nota)
     : estudiante(_estudiante),
