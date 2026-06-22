@@ -10,5 +10,10 @@ Materia::Materia(std::string _nombre, float _codigo, float _creditos) {
     this->codigo = _codigo;
     this->creditos = _creditos;
 }
-
+// Método para mostrar información de la materia
+void Materia::mostrar_info() {
+    std::cout << "Materia: " << nombre
+              << ", Código: " << codigo
+              << ", Créditos: " << creditos << std::endl;
+}
 
