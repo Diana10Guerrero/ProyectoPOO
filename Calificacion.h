@@ -20,7 +20,7 @@ public:
     void mostrar();
     void serializar(std::ofstream &archivo);
 
-    // Getters
+    
     Estudiante getEstudiante() { return estudiante; }
     Profesor getProfesor() { return profesor; }
     Materia getMateria() { return materia; }

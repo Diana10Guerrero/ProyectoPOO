@@ -13,7 +13,6 @@ void Calificacion::mostrar() {
     std::cout << "----- CALIFICACIÓN -----\n";
     estudiante.mostrar();
     profesor.mostrar();
-    materia.mostrar_info();
     std::cout << "Nota: " << nota << "\n";
 }
 
