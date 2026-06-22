@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <sftream> 
 #include <fstream>
 #include "Estudiante.h"
 #include "Materia.h"
@@ -13,16 +14,19 @@ private:
     float nota;
 
 public:
-    // SOLO DECLARACIÓN DEL CONSTRUCTOR
-    Calificacion(Estudiante _estudiante, Profesor _profesor, Materia _materia, float _nota);
+    Calificacion(Estudiante e, Profesor p, Materia m, float n)
+        : estudiante(e), profesor(p), materia(m), nota(n) {}
 
-    // Métodos
-    void mostrar();
-    void serializar(std::ofstream &archivo);
+    // GETTERS CORRECTOS (const)
+    Estudiante getEstudiante() const { return estudiante; }
+    Profesor getProfesor() const { return profesor; }
+    Materia getMateria() const { return materia; }
+    float getNota() const { return nota; }
 
-    
-    Estudiante getEstudiante() { return estudiante; }
-    Profesor getProfesor() { return profesor; }
-    Materia getMateria() { return materia; }
-    float getNota() { return nota; }
+    void mostrar() const {
+        std::cout << "Estudiante: " << estudiante.get_Nombre() << "\n";
+        std::cout << "Profesor: " << profesor.get_nombre() << "\n";
+        std::cout << "Materia: " << materia.get_nombre() << "\n";
+        std::cout << "Nota: " << nota << "\n";
+    }
 };
